@@ -7,4 +7,5 @@ def getfiles():
         found.append(''.join([item for sublist in filenames for item in sublist if sublist.endswith('.pdf')]))
     return [file for file in found if len(file)]
 
-print(getfiles())
+if __name__ == "__main__":
+    print(getfiles())
